@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generador de Hash SHA-256</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="mx-auto" style="width: 600px">
+      <h1 class="p-2">Generador SHA-256</h1>
+
+      <label class="p-2 fw-bold" for="inputText">Ingresa algún texto:</label>
+      <input type="text" id="inputText" />
+      <button onclick="generateHash()">Generar SHA-256</button>
+
+      <p class="p-2 fw-bold">SHA-256 Generado:</p>
+      <p id="result"></p>
+      <p class="p-2">By Edson Jair Fuentes García</p>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.10.1/sha256.js"
+      integrity="sha512-I10uxz+ewyO4jNEzkfqqBbhmUX1gAaL1NVIu1Ki+emGuoMjULGyzJnBolDVqV0WbQzVLjT8Ji5Q708qaQIwNPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
